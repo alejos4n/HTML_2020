@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido embebido</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contenido embebido</h1>
+    <img src="/assets/dockerpng.png" alt="imagen PNG">
+    <!-- 
+        DPR: device pixel ratio. relación de los pixeles reales del dispositivo y los pixeles disponibles para dibujar. o sea, a la pantalla se le quita el
+        espacio de la barra de tareas del SO, mas la barra de marcadores y otras cosas dependiendo la configuración del navegador
+
+        DPR = pixeles reales / pixeles disponibles
+        se recomienda usar imagenes  para desktop y otro para moviles
+     -->
+     <!-- <img src="/assets/dockerjpg.jpg" alt="jpg"> -->
+
+     <div>
+         <!-- en funcion del DPR carga la imagen dockerjpg o dockerjpgmov -->
+         <h1>Atributo srcset</h1>
+         <img srcset="/assets/dockerjpg.jpg,
+         /assets/dockerjpgmov.jpg 2x" alt="completa">
+     </div>
+</body>
+</html>

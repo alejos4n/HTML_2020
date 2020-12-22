@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta Picture</title>
+</head>
+<body>
+    <h1>Contenido embebido</h1>
+    <div>
+        <h2>etiqueta picture atributo source</h2>
+        <picture>
+            <!-- en picture debe ponerse la etiqueta img de forma obligatoria -->
+            <source srcset="
+                /assets/dockerjpg.jpg,
+                /assets/dockerjpgmov.jpg"> 
+                <img src="/assets/dockerjpg.jpg" alt="picture">
+        </picture>
+
+    </div>
+    <div>
+        <h2>etiqueta picture atributo source-media</h2>
+        <picture>
+            <!-- en picture debe ponerse la etiqueta img de forma obligatoria -->
+            <source srcset="/assets/dockerjpg.jpg" media="(max-width:1200px)"> 
+                <img src="/assets/dockerjpg.jpg" alt="picture">
+        </picture>
+
+    </div>
+    
+</body>
+</html>
